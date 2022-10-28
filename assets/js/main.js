@@ -110,9 +110,6 @@ let swiperPortfolio = new Swiper('.portfolio_container', {
     }
 });
 
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
