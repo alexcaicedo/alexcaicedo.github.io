@@ -4,9 +4,625 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Portfolio's website</title>
 </head>
 <body>
-    <h1>Site in construction...</h1>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div>
+                <a href="#home" class="nav_logo">
+                    <h2>A<span>C</span></h2>
+                </a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav_link active_link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav_link">About Me</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#skills" class="nav_link">Skills</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#qualification" class="nav_link">Qualifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav_link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav_link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="nav_close" id="nav_close">
+                    <i class="uil uil-times nav_close" id="nav-close"></i>
+                </div>
+            </div>
+
+            <div class="nav_btns">
+            <!--====== THEME CHANGE BUTTON ======-->
+            <i class="uil uil-moon change_theme" id="theme-button"></i>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="uil uil-bars"></i>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_img">
+                    <img src="assets/images/me.png" alt="">
+                </div>
+
+                <div class="home_data">
+                    <h1 class="home_title">Hi,</h1>
+                    <h1 class="home_title">I'm <span>Alex</span> Caicedo</h1>
+                    <h3 class="home_subtitle">Data Scientist | Data Analyst</h3>
+                    <p class="home_description">
+                        I have more than 3 years experience in applied mathematics, statistics and Research & Development activities. Perfectly
+                        comfortable extracting, processing and analyzing valuable information from large datasets. <br><br> Acquainted with SQL queries,
+                        Python scripting, Jupyter Notebooks, Power BI, EDA, Venvs, Conda, PIP, among several other Data processing tools and techniques.
+                    </p>
+                    <a href="#contact" class="button button--flex">
+                        Contact Me <i class="uil uil-message button_icon"></i>
+                    </a>
+                    <div class="home_scroll">
+                        <a href="#about" class="home_scroll-button button--flex"></a>
+                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                    </div>
+                    <div class="home_social">
+                        <span class="home_social-follow">Follow Me</span>
+                        <div class="home_social-links">
+                            <a href="https://www.linkedin.com/in/alexcaicedo" class="home_social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/alexcaicedo" class="home_social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://twitter.com/AlexCaiced0" class="home_social-icon">
+                                <i class="uil uil-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home_scroll_social">
+                        <div class="home_scroll1">
+                            <a href="#about" class="home_scroll-button button--flex"></a>
+                            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                            <span class="home_scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                        </div>
+                        <div class="home_social1">
+                            <div class="home_social-links">
+                                <a href="https://www.linkedin.com/in/alexcaicedo" class="home_social-icon">
+                                    <i class="uil uil-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/alexcaicedo" class="home_social-icon">
+                                    <i class="uil uil-github"></i>
+                                </a>
+                                <a href="https://twitter.com/AlexCaiced0" class="home_social-icon">
+                                    <i class="uil uil-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My interests</span>
+
+            <div class="about_container container grid">
+                <img src="assets/images/me2.jpg" alt="" class="about_img">
+
+                <div class="about_data">
+                    <p class="about_description">
+                        I'm a person with an endless intellectual curiosity, with a student mindset, always striving for opportunities to learn
+                        and improve human and technical skills. I've become super intrigued about the transformative potential of 
+                        Artificial Intelligence and its overall technological benefits in organizations and communities.
+                        I'm resourceful, open-minded, multiculturally sensitive and quickly adaptable to new environments.
+                    </p>
+                    <div class="about_info">
+                        <div>
+                            <span class="about_info-title">03+</span>
+                            <span class="about_info-name">Years data-related <br>experience</span>
+                        </div>
+                        <div>
+                            <span class="about_info-title">05+</span>
+                            <span class="about_info-name">Companies <br>and job experiences</span>
+                        </div>
+                    </div>
+                    <div class="about_buttons">
+                        <a href="https://1drv.ms/b/s!AqPPXJgnT6Fmsn-sBrh6Bo3KP7HR?e=grs7Vf" class="button button--flex">
+                            My Resume <i class="uil uil-download-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <!-- <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My tech level</span>
+
+            <div class="skills_container container grid">
+                <div> -->
+                    <!--============== SKILL 1 ==============-->
+                    <!-- <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Front-end Developer</h1>
+                                <span class="skills_subtitle">More than 4 years</span>
+                            </div>
+    
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">HTML</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_html"></span>
+                                </div>
+                            </div>
+    
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_css"></span>
+                                </div>
+                            </div>
+    
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_js"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!--============== SKILL 2 ==============-->
+                    <!-- <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-server-network skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Back-end Developer</h1>
+                                <span class="skills_subtitle">More than 7 years</span>
+                            </div>
+    
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">PHP</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_php"></span>
+                                </div>
+                            </div>
+    
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Node JS</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_nodejs"></span>
+                                </div>
+                            </div>
+    
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Python</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_python"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Ruby</h3>
+                                    <span class="skills_number">55%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_ruby"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- </div>
+                <div> -->
+                    <!--============== SKILL 3 ==============-->
+                    <!-- <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-server-network skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Designer</h1>
+                                <span class="skills_subtitle">More than 5 years</span>
+                            </div>
+    
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Figma</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_figma"></span>
+                                </div>
+                            </div>
+    
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Sketch</h3>
+                                    <span class="skills_number">85%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_sketch"></span>
+                                </div>
+                            </div>
+    
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Adobe XD</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_adobexd"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Photoshop</h3>
+                                    <span class="skills_number">85%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_photoshop"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                <!-- </div>
+            </div>
+        </section> -->
+
+        <!--==================== QUALIFICATIONS ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualifications</h2>
+            <span class="section__subtitle">My professional journey</span>
+
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button--flex qualification_active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification_icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification_button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase qualification_icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification_sections">
+                    <!--============== QUALIFICATION CONTENT 1 ==============-->
+                    <div class="qualification_content qualification_active" data-content id="education">
+                        <!--============== QUALIFICATION 1 ==============-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Data Analyst</h3>
+                                <span class="qualification_subtitle">School of DS & AI - Platzi</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jul. 2022 - In progress
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <!--============== QUALIFICATION 2 ==============-->
+                        <div class="qualification_data">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification_title">Data Science Bootcamp</h3>
+                                <span class="qualification_subtitle">MinTIC & Correlation One</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Mar. 2022 - Jul. 2022
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!--============== QUALIFICATION 3 ==============-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">B.Eng. Petroleum Engineering</h3>
+                                <span class="qualification_subtitle">South Colombian University</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Aug. 2008 - Feb. 2014
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <span class="qualification_line"></span> -->
+                            </div>
+                        </div>
+
+                        <!--============== QUALIFICATION 4 ==============-->
+                        <!--============== QUALIFICATION 5 ==============-->
+                        <!--============== QUALIFICATION 6 ==============-->
+                    </div>
+
+                    <!--============== QUALIFICATION CONTENT 2 ==============-->
+                    <div class="qualification_content" data-content id="work">
+                        <!--============== QUALIFICATION 1 ==============-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Research Assitant</h3>
+                                <span class="qualification_subtitle">Cepetro - Brazil</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Jan. 2019 - Mar. 2021
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <!--============== QUALIFICATION 2 ==============-->
+                        <div class="qualification_data">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification_title">Field Engineer</h3>
+                                <span class="qualification_subtitle">Lupatech OFS - Colombia</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Sep. 2014 - Sep. 2015
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!--============== QUALIFICATION 3 ==============-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Field Engineer Internship</h3>
+                                <span class="qualification_subtitle">Pacific Rubiales Energy Corp. - Colombia</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Feb. 2013 - Aug. 2013
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <span class="qualification_line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio_container container swiper-container">
+                <div class="swiper-wrapper">
+                    
+                    <!--============== PORTFOLIO 1 ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/images/dashboard.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">CO<sub>2</sub> Emissions</h3>
+                            <p class="portfolio_description">
+                                Pre-processing, EDA and data analysis project using CO<sub>2</sub> emissions data.
+                            </p>
+                            <a href="https://github.com/alexcaicedo/co2-project" class="button button--flex button--small portfolio_button">
+                                GitHub
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--============== PORTFOLIO 2 ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/images/col_passport.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Passport requests prediction</h3>
+                            <p class="portfolio_description">
+                                Web app development for time series analysis and forecast of a Colombian passport requests dataset using the Prophet model.
+                            </p>
+                            <a href="https://github.com/alexcaicedo/passports-prediction" class="button button--flex button--small portfolio_button">
+                                GitHub
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--============== PORTFOLIO 3 ==============-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/images/for_sale.jpg" alt="" class="portfolio_img">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Predicting House Prices</h3>
+                            <p class="portfolio_description">
+                                Notebook created with the objective of putting into practice supervised ML concepts for House Price prediction.
+                            </p>
+                            <a href="https://github.com/alexcaicedo/ml-zoomcamp/blob/main/02_regression/house_prices_homework.ipynb" class="button button--flex button--small portfolio_button">
+                                GitHub
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Arrow -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact_container container grid">
+                <div>
+                    <!-- <div class="contact_information">
+                        <i class="uil uil-message contact_icon"></i>
+    
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">(+57) 321-278-9944</span>
+                        </div>
+                    </div> -->
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>
+    
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Colombia</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact_form grid" action="https://formsubmit/a.caicedo_g@hotmail.com" method="POST">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Your name</label>
+                            <input type="text" class="contact_input" required>
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Your email</label>
+                            <input type="email" class="contact_input" required>
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Your message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input" required></textarea>
+                    </div>
+                    <div>
+                        <input type="hidden" value="Personal website email!!!">
+                        <a href="ty.html/#home" class="button button--flex">
+                            Send
+                            <i class="uil uil-message button_icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Alex Caicedo</h1>
+                    <span class="footer_subtitle">Data Scientist | Data Analyst</span>
+                    <!-- <p class="footer_subtitle">
+                        Here goes a small description about my role.
+                    </p> -->
+                </div>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#portfolio" class="footer_link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="footer_social">
+                    <a href="https://www.linkedin.com/in/alexcaicedo" target="_blank" class="footer_social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/alexcaicedo" target="_blank" class="footer_social">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://twitter.com/AlexCaiced0" target="_blank" class="footer_social">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer_copy">&#169; Created by ALEXANDER CAICEDO GARZ&Oacute;N, 2023</p>
+        </div>
+    </footer>
+    
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
