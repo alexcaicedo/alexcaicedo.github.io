@@ -755,8 +755,6 @@ button {
 /*==================== CONTACT ====================*/
 .contact_container {
     row-gap: 3rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
 }
 
 .contact_information {
