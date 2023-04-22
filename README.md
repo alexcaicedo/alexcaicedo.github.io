@@ -1,5 +1,5 @@
 # **Portfolio's website**
-**Link:** https://alexcaicedo.github.io
+**Link:** https://alexcaicedo.com
 
 ## **Changelog**
 - *October-2022:* 
